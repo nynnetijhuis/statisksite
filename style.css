@@ -122,6 +122,59 @@ h2 {
   grid-template-rows: subgrid;
   grid-row: span 4;
 }
+
+/*************** Productlist *********************/
+.boks {
+  display: flex;
+  flex-direction: column; /* hvert produkt under hinanden */
+  align-items: center; /* centrerer kortene horisontalt */
+  gap: 15px; /* afstand mellem kort */
+}
+
+/* Produktkort - mobil først: billede over tekst */
+.product-information {
+  display: grid;
+  grid-template-columns: 1fr; /* én kolonne på mobil */
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 90%; /* kortene fylder det meste af skærmen */
+  max-width: 500px;
+  background-color: #fff;
+  text-align: center; /* tekst centreret på mobil */
+}
+
+/* Billede fylder hele kolonnen */
+.product-information img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tekststyling */
+.product-information h3,
+.product-information .brand,
+.product-information .price,
+.product-information .lagerstatus,
+.product-information button {
+  margin: 5px 0;
+}
+
+/* Knap styling */
+.product-information button {
+  padding: 8px 12px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+}
+
+/* Desktop: to kolonner med billede venstre, tekst højre */
+@media (min-width: 700px) {
+  .product-information {
+    grid-template-columns: 200px 1fr; /* venstre: billede, højre: tekst */
+    text-align: left; /* tekst justeres til venstre */
+  }
+}
 /*************** Desktop version *********************/
 @media (min-width: 840px) {
   .grid_1-3 {
