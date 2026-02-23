@@ -1,0 +1,114 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Farver *********************/
+:root {
+  --color-baggrundfarve: #faf5f5;
+  --color-boks1: #eab0b0;
+  --color-boks2: rgb(157, 58, 58);
+  --color-boks3: #ecc697;
+  --color-boks4: #faf5f5;
+  --color-boks5: rgb(94, 66, 66);
+  --color-boks6: #ecc697;
+}
+/*************** overskrifter *********************/
+
+h1 {
+  place-self: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  place-self: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*************** Boks Categories *********************/
+
+.grid_1-3 {
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  gap: 10px;
+}
+.box1 {
+  background-color: var(--color-boks1);
+  border: 1px solid var(--color-boksfarve);
+  max-width: 400px; /* ændre størrelsen på boksen */
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box2 {
+  background-color: var(--color-boks2);
+  border: 1px solid var(--color-boksfarve);
+  max-width: 400px; /* ændre størrelsen på boksen */
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box3 {
+  background-color: var(--color-boks3);
+  border: 1px solid var(--color-boksfarve);
+  max-width: 400px; /* ændre størrelsen på boksen */
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box4 {
+  background-color: var(--color-boks4);
+  border: 1px solid var(--color-boksfarve);
+  max-width: 400px; /* ændre størrelsen på boksen */
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box5 {
+  background-color: var(--color-boks5);
+  border: 1px solid var(--color-boksfarve);
+  max-width: 400px; /* ændre størrelsen på boksen */
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box6 {
+  background-color: var(--color-boks6);
+  border: 1px solid var(--color-boksfarve);
+  max-width: 400px; /* ændre størrelsen på boksen */
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+/*************** Desktop version *********************/
+@media (min-width: 840px) {
+  .grid_1-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 30px;
+    width: 1000px;
+  }
+}
