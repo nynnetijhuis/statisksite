@@ -219,6 +219,16 @@ h3 {
   text-align: center;
 }
 
+.soldout {
+  color: red;
+  font-weight: bold;
+  text-align: end;
+}
+
+.instock {
+  color: green;
+  text-align: end;
+}
 /* Desktop: to kolonner med billede venstre, tekst højre */
 @media (min-width: 700px) {
   .product-information {
